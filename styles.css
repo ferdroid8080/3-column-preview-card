@@ -1,0 +1,79 @@
+:root {
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  /* Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  /* Typography */
+  --font-size-base: 15px;
+  --font-lexend: 'Lexend Deca', sans-serif;
+  --font-bsd: 'Big Shoulders Display', sans-serif;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  font-size: var(--font-size-base);
+}
+
+.wrap-container {
+  margin: 0 20px;
+}
+
+.orange {
+  background: var(--bright-orange);
+}
+
+.dark-cyan {
+  background: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+  background: var(--very-dark-cyan);
+}
+
+.border-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.border-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card--item {
+  padding: 40px 45px;
+}
+
+.card--item .card--item--header {
+  padding: 30px 0;
+}
+
+.card--item .card--item--header h2 {
+  font-family: var(--font-bsd);
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+}
+
+.card--item .card--item--content p {
+  font-family: var(--font-lexend);
+  color: var(--transparent-white);
+  line-height: 1.7rem;
+  font-weight: var(--font-regular);
+}
