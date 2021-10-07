@@ -116,3 +116,70 @@ body {
 .rounded {
   border-radius: 30px;
 }
+
+
+.card--sedan--image {
+  width: 80px;
+  height: 50px;
+  background-image: url('./images/icon-sedans.svg');
+  background-size: contain;
+  background-position: 0px 0;
+}
+
+.card--suvs--image {
+  width: 80px;
+  height: 50px;
+  background-image: url('./images/icon-suvs.svg');
+  background-size: contain;
+  background-position: 0px 0;
+}
+
+.card--luxury--image {
+  width: 80px;
+  height: 50px;
+  background-image: url('./images/icon-luxury.svg');
+  background-size: contain;
+  background-position: 0px 0;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    margin: 0 100px;
+  }
+
+  .wrap-container {
+    display: flex;
+    height: 50vh;
+  }
+
+  .border-top {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px
+  }
+  .border-bottom {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .card--item--content {
+    margin: 20px 0;
+  }
+
+  .card--item .card--item--content p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .card--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
